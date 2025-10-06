@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Oficial Isabela - 365 Dias de Amor</title>
+    
+    <style>
+        /*
+        ========================================
+        ESTILO (CSS) DO CONVITE
+        ========================================
+        */
+
+        /* 1. LAYOUT GERAL DA PÁGINA */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fundo leve */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: flex-start; /* Alinha no topo (melhor para mobile) */
+            min-height: 100vh;
+        }
+
+        /* 2. CONTAINER PRINCIPAL (ONDE FICA A IMAGEM) */
+        .convite-container {
+            width: 100%;
+            max-width: 400px; /* Largura padrão de convite digital */
+            position: relative;
+            
+            /* IMAGEM DE FUNDO DO CANVA */
+            background-image: url('convite-isabela.png'); 
+            background-size: contain; /* Ajusta a imagem para caber sem cortar */
+            background-repeat: no-repeat;
+            background-position: center top;
+            aspect-ratio: 1 / 1.5; /* Ajuste a proporção se o seu design não for 1:1.5 */
+            
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 10px;
+            overflow: hidden; /* Garante que o conteúdo não vaze */
+        }
+
+        /* 3. OCULTA TEXTOS DUPLICADOS DA IMAGEM */
+        .titulo-amor, .nome-principal, .data-evento, .instrucao, .info-placeholder {
+            display: none;
+        }
+        
+        /* 4. POSICIONAMENTO E ESTILO DOS BOTÕES INTERATIVOS */
+        .conteudo-interativo {
+            /* POSICIONA OS BOTÕES ABAIXO DA ÁREA VISUAL PRINCIPAL DO CONVITE */
+            padding-top: 50vh; /* AJUSTE ESTE VALOR se os botões estiverem muito altos ou muito baixos. */
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .icone-interativo {
+            display: block; 
+            width: 80%; /* Largura do botão */
+            background-color: rgba(255, 255, 255, 0.95); /* Fundo branco quase sólido */
+            border: 2px solid #D2B48C; /* Borda cor ouro/cobre para estilo */
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .icone-interativo:hover {
+            background-color: #F0E68C; /* Amarelo claro/dourado ao passar o mouse */
+            transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+        }
+
+        .icone-interativo strong {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 5px;
+            color: #36454F; /* Cor mais formal (cinza escuro) */
+        }
+
+        .icone-interativo .label-principal {
+             font-size: 0.8em;
+             color: #666;
+             margin-bottom: 5px;
+        }
+        
+        .icon {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #D2B48C; /* Cor ouro/cobre para os ícones */
+        }
+
+        /* Responsividade para telas muito pequenas */
+        @media (max-width: 350px) {
+            .icone-interativo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="convite-container">
+    
+    <p class="titulo-amor">365 dias de</p>
+    <h1 class="nome-principal">Isabela</h1>
+    <p class="data-evento">
+        <span class="icon">📅</span> 03 de Outubro de 2025
+    </p>
+
+    <div class="conteudo-interativo">
+        
+        <a href="#LINK_DO_CONVITE_DETALHADO_OU_MENSAGEM" class="icone-interativo">
+            <div class="icon">✉️</div>
+            <div class="label-principal">Clique na cartinha para</div>
+            <strong>Ver a Mensagem da Isabela!</strong>
+        </a>
+        
+        <a href="https://www.google.com.br/maps/place/Lindolfo+pousada/@-6.613747,-35.2921333,17z/data=!4m9!3m8!1s0x7ad9ffc6839626f:0x7a8e9437194a98c3!5m2!4m1!1i2!8m2!3d-6.6137523!4d-35.2895584!16s%2Fg%2F11rscgc0v7?entry=tts&g_ep=EgoyMDI1MDkyOS4wIPu8ASoASAFQAw%3D%3D&skid=035b5f9c-1716-4173-9872-4b2ba4d794a2" target="_blank" class="icone-interativo">
+            <div class="icon">🗺️</div>
+            <div class="label-principal">Lindolfo Pousada</div>
+            <strong>Abrir Mapa (Localização)</strong>
+        </a>
+
+        <a href="https://api.whatsapp.com/send/?phone=5583986647011&text=Oi+%EF%BF%BD%EF%BF%BD+Passando+pra+confirmar+minha+presen%C3%A7a+na+anivers%C3%A1rio+de+1+aninho+da+princesa+Isabela%21+%EF%BF%BD%EF%BF%BD+Vai+ser+uma+alegria+enorme+comemorar+esse+dia+t%C3%A3o+especial+e+cheio+de+sorrisos+com+voc%C3%AAs%21&type=phone_number&app_absent=0" target="_blank" class="icone-interativo">
+            <div class="icon">✅</div>
+            <div class="label-principal">Confirmação de Presença</div>
+            <strong>Confirmar via WhatsApp</strong>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
